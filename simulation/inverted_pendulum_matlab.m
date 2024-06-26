@@ -2,22 +2,22 @@
 % Run this block to initialise simscape pendulum model parameters
 
 % DC Motor Parameters
-kt=0.042;% torque constant
-km=0.042;% motor back-emf constant
-R=8.4;% terminal resistance
-L=0.85e-3;% terminal inductance
+kt=0.00768;% torque constant (got from data sheet)
+km=0.00768;% motor back-emf constant (got from data sheet)
+R=2.6;% terminal resistance (got from data sheet)
+L=0.00018;% terminal inductance (got from data sheet)
 
 % Inverted Pendulum Parameters
 % lengths are in cm and mass in kg
-base_size=7; % length of pendulum base cube
+base_size=12.5; % length of pendulum base cube (init 7)
 % Rotary arm parameters
-rod_rad=1;% rotary arm radius
-rod_length=8.5;% rotary arm length
-rod_mass=0.095;% rotary arm mass
+rod_rad=1;% rotary arm radius (NA)
+rod_length=22;% rotary arm length
+rod_mass=0.256;% rotary arm mass
 % Pendulum parameters
-p_rad=1;% pendulum radius
-p_length=12.9;% pendulum length
-p_mass=0.024;% pendulum mass
+p_rad=0.6;% pendulum radius
+p_length=33;% pendulum length
+p_mass=0.126;% pendulum mass
 rt1=base_size/2;
 rt2=rod_length-0.4;
 rt4=p_length/2;
