@@ -1,0 +1,96 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   11 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "doneDoubleBufferReInit"\
+      Description  "DoubleBufferInitCheck"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_QUARC_simlink"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c3_QUARC_simlink"\
+      Path         "is_active_c3_QUARC_simlink"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "previous_arm1_inpt"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:100-118"\
+    }\
+    ChartData {\
+      Name         "previous_arm1_inpt_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:100-118"\
+    }\
+    ChartData {\
+      Name         "previous_arm2_inpt"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:130-148"\
+    }\
+    ChartData {\
+      Name         "previous_arm2_inpt_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:130-148"\
+    }\
+    ChartData {\
+      Name         "i1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:160-162"\
+    }\
+    ChartData {\
+      Name         "i1_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:160-162"\
+    }\
+    ChartData {\
+      Name         "i2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:174-176"\
+    }\
+    ChartData {\
+      Name         "i2_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QUARC_simlink:23:174-176"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

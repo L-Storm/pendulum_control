@@ -12,10 +12,10 @@
 % Created by Alan Jennings, 2012, alanjenningsohio (at) hotmail dot com
 
 %% Set parameters
-m1=0.2;%kg
-m2=0.7; %kg
-L1=1.4;%m
-L2=0.5;%m
+m1=0.256;%kg
+m2=0.126; %kg
+L1=0.22;%m
+L2=0.33;%m
 g=9.81; %m/sec^2
 %create base input to excite the system, must be the same as in Simulink
 %for perfict comparison

@@ -7,9 +7,9 @@
  *
  * Code generation for model "QUARC_simlink".
  *
- * Model version              : 15.18
+ * Model version              : 15.19
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Wed Jun 26 14:05:03 2024
+ * C source code generated on : Fri Jun 28 16:25:51 2024
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -388,10 +388,10 @@ RT_MODEL_QUARC_simlink_T *QUARC_simlink(void)
   QUARC_simlink_M->Timing.stepSize0 = 0.002;
 
   /* External mode info */
-  QUARC_simlink_M->Sizes.checksums[0] = (3305962294U);
-  QUARC_simlink_M->Sizes.checksums[1] = (1436011901U);
-  QUARC_simlink_M->Sizes.checksums[2] = (531323910U);
-  QUARC_simlink_M->Sizes.checksums[3] = (1871628863U);
+  QUARC_simlink_M->Sizes.checksums[0] = (3066231934U);
+  QUARC_simlink_M->Sizes.checksums[1] = (3483435170U);
+  QUARC_simlink_M->Sizes.checksums[2] = (1576280819U);
+  QUARC_simlink_M->Sizes.checksums[3] = (2503208956U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
