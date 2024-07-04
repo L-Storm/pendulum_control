@@ -43,8 +43,8 @@
             paramMap.sections(1) = section;
             clear section
 
-            section.nData     = 16;
-            section.data(16)  = dumData; %prealloc
+            section.nData     = 15;
+            section.data(15)  = dumData; %prealloc
 
                     ;% QUARC_simlink_P.HILInitialize_OOTerminate
                     section.data(1).logicalSrcIdx = 2;
@@ -102,13 +102,9 @@
                     section.data(14).logicalSrcIdx = 15;
                     section.data(14).dtTransOffset = 13;
 
-                    ;% QUARC_simlink_P.SignalGenerator_Amplitude
+                    ;% QUARC_simlink_P.Constant1_Value
                     section.data(15).logicalSrcIdx = 16;
                     section.data(15).dtTransOffset = 14;
-
-                    ;% QUARC_simlink_P.SignalGenerator_Frequency
-                    section.data(16).logicalSrcIdx = 17;
-                    section.data(16).dtTransOffset = 15;
 
             nTotData = nTotData + section.nData;
             paramMap.sections(2) = section;
@@ -118,7 +114,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QUARC_simlink_P.HILInitialize_EIInitial
-                    section.data(1).logicalSrcIdx = 18;
+                    section.data(1).logicalSrcIdx = 17;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -129,11 +125,11 @@
             section.data(2)  = dumData; %prealloc
 
                     ;% QUARC_simlink_P.HILInitialize_EIChannels
-                    section.data(1).logicalSrcIdx = 19;
+                    section.data(1).logicalSrcIdx = 18;
                     section.data(1).dtTransOffset = 0;
 
                     ;% QUARC_simlink_P.HILInitialize_EIQuadrature
-                    section.data(2).logicalSrcIdx = 20;
+                    section.data(2).logicalSrcIdx = 19;
                     section.data(2).dtTransOffset = 2;
 
             nTotData = nTotData + section.nData;
@@ -144,151 +140,151 @@
             section.data(37)  = dumData; %prealloc
 
                     ;% QUARC_simlink_P.HILInitialize_Active
-                    section.data(1).logicalSrcIdx = 21;
+                    section.data(1).logicalSrcIdx = 20;
                     section.data(1).dtTransOffset = 0;
 
                     ;% QUARC_simlink_P.HILInitialize_AOTerminate
-                    section.data(2).logicalSrcIdx = 22;
+                    section.data(2).logicalSrcIdx = 21;
                     section.data(2).dtTransOffset = 1;
 
                     ;% QUARC_simlink_P.HILInitialize_AOExit
-                    section.data(3).logicalSrcIdx = 23;
+                    section.data(3).logicalSrcIdx = 22;
                     section.data(3).dtTransOffset = 2;
 
                     ;% QUARC_simlink_P.HILInitialize_DOTerminate
-                    section.data(4).logicalSrcIdx = 24;
+                    section.data(4).logicalSrcIdx = 23;
                     section.data(4).dtTransOffset = 3;
 
                     ;% QUARC_simlink_P.HILInitialize_DOExit
-                    section.data(5).logicalSrcIdx = 25;
+                    section.data(5).logicalSrcIdx = 24;
                     section.data(5).dtTransOffset = 4;
 
                     ;% QUARC_simlink_P.HILInitialize_POTerminate
-                    section.data(6).logicalSrcIdx = 26;
+                    section.data(6).logicalSrcIdx = 25;
                     section.data(6).dtTransOffset = 5;
 
                     ;% QUARC_simlink_P.HILInitialize_POExit
-                    section.data(7).logicalSrcIdx = 27;
+                    section.data(7).logicalSrcIdx = 26;
                     section.data(7).dtTransOffset = 6;
 
                     ;% QUARC_simlink_P.HILInitialize_CKPStart
-                    section.data(8).logicalSrcIdx = 28;
+                    section.data(8).logicalSrcIdx = 27;
                     section.data(8).dtTransOffset = 7;
 
                     ;% QUARC_simlink_P.HILInitialize_CKPEnter
-                    section.data(9).logicalSrcIdx = 29;
+                    section.data(9).logicalSrcIdx = 28;
                     section.data(9).dtTransOffset = 8;
 
                     ;% QUARC_simlink_P.HILInitialize_CKStart
-                    section.data(10).logicalSrcIdx = 30;
+                    section.data(10).logicalSrcIdx = 29;
                     section.data(10).dtTransOffset = 9;
 
                     ;% QUARC_simlink_P.HILInitialize_CKEnter
-                    section.data(11).logicalSrcIdx = 31;
+                    section.data(11).logicalSrcIdx = 30;
                     section.data(11).dtTransOffset = 10;
 
                     ;% QUARC_simlink_P.HILInitialize_AIPStart
-                    section.data(12).logicalSrcIdx = 32;
+                    section.data(12).logicalSrcIdx = 31;
                     section.data(12).dtTransOffset = 11;
 
                     ;% QUARC_simlink_P.HILInitialize_AIPEnter
-                    section.data(13).logicalSrcIdx = 33;
+                    section.data(13).logicalSrcIdx = 32;
                     section.data(13).dtTransOffset = 12;
 
                     ;% QUARC_simlink_P.HILInitialize_AOPStart
-                    section.data(14).logicalSrcIdx = 34;
+                    section.data(14).logicalSrcIdx = 33;
                     section.data(14).dtTransOffset = 13;
 
                     ;% QUARC_simlink_P.HILInitialize_AOPEnter
-                    section.data(15).logicalSrcIdx = 35;
+                    section.data(15).logicalSrcIdx = 34;
                     section.data(15).dtTransOffset = 14;
 
                     ;% QUARC_simlink_P.HILInitialize_AOStart
-                    section.data(16).logicalSrcIdx = 36;
+                    section.data(16).logicalSrcIdx = 35;
                     section.data(16).dtTransOffset = 15;
 
                     ;% QUARC_simlink_P.HILInitialize_AOEnter
-                    section.data(17).logicalSrcIdx = 37;
+                    section.data(17).logicalSrcIdx = 36;
                     section.data(17).dtTransOffset = 16;
 
                     ;% QUARC_simlink_P.HILInitialize_AOReset
-                    section.data(18).logicalSrcIdx = 38;
+                    section.data(18).logicalSrcIdx = 37;
                     section.data(18).dtTransOffset = 17;
 
                     ;% QUARC_simlink_P.HILInitialize_DOPStart
-                    section.data(19).logicalSrcIdx = 39;
+                    section.data(19).logicalSrcIdx = 38;
                     section.data(19).dtTransOffset = 18;
 
                     ;% QUARC_simlink_P.HILInitialize_DOPEnter
-                    section.data(20).logicalSrcIdx = 40;
+                    section.data(20).logicalSrcIdx = 39;
                     section.data(20).dtTransOffset = 19;
 
                     ;% QUARC_simlink_P.HILInitialize_DOStart
-                    section.data(21).logicalSrcIdx = 41;
+                    section.data(21).logicalSrcIdx = 40;
                     section.data(21).dtTransOffset = 20;
 
                     ;% QUARC_simlink_P.HILInitialize_DOEnter
-                    section.data(22).logicalSrcIdx = 42;
+                    section.data(22).logicalSrcIdx = 41;
                     section.data(22).dtTransOffset = 21;
 
                     ;% QUARC_simlink_P.HILInitialize_DOReset
-                    section.data(23).logicalSrcIdx = 43;
+                    section.data(23).logicalSrcIdx = 42;
                     section.data(23).dtTransOffset = 22;
 
                     ;% QUARC_simlink_P.HILInitialize_EIPStart
-                    section.data(24).logicalSrcIdx = 44;
+                    section.data(24).logicalSrcIdx = 43;
                     section.data(24).dtTransOffset = 23;
 
                     ;% QUARC_simlink_P.HILInitialize_EIPEnter
-                    section.data(25).logicalSrcIdx = 45;
+                    section.data(25).logicalSrcIdx = 44;
                     section.data(25).dtTransOffset = 24;
 
                     ;% QUARC_simlink_P.HILInitialize_EIStart
-                    section.data(26).logicalSrcIdx = 46;
+                    section.data(26).logicalSrcIdx = 45;
                     section.data(26).dtTransOffset = 25;
 
                     ;% QUARC_simlink_P.HILInitialize_EIEnter
-                    section.data(27).logicalSrcIdx = 47;
+                    section.data(27).logicalSrcIdx = 46;
                     section.data(27).dtTransOffset = 26;
 
                     ;% QUARC_simlink_P.HILInitialize_POPStart
-                    section.data(28).logicalSrcIdx = 48;
+                    section.data(28).logicalSrcIdx = 47;
                     section.data(28).dtTransOffset = 27;
 
                     ;% QUARC_simlink_P.HILInitialize_POPEnter
-                    section.data(29).logicalSrcIdx = 49;
+                    section.data(29).logicalSrcIdx = 48;
                     section.data(29).dtTransOffset = 28;
 
                     ;% QUARC_simlink_P.HILInitialize_POStart
-                    section.data(30).logicalSrcIdx = 50;
+                    section.data(30).logicalSrcIdx = 49;
                     section.data(30).dtTransOffset = 29;
 
                     ;% QUARC_simlink_P.HILInitialize_POEnter
-                    section.data(31).logicalSrcIdx = 51;
+                    section.data(31).logicalSrcIdx = 50;
                     section.data(31).dtTransOffset = 30;
 
                     ;% QUARC_simlink_P.HILInitialize_POReset
-                    section.data(32).logicalSrcIdx = 52;
+                    section.data(32).logicalSrcIdx = 51;
                     section.data(32).dtTransOffset = 31;
 
                     ;% QUARC_simlink_P.HILInitialize_OOReset
-                    section.data(33).logicalSrcIdx = 53;
+                    section.data(33).logicalSrcIdx = 52;
                     section.data(33).dtTransOffset = 32;
 
                     ;% QUARC_simlink_P.HILInitialize_DOFinal
-                    section.data(34).logicalSrcIdx = 54;
+                    section.data(34).logicalSrcIdx = 53;
                     section.data(34).dtTransOffset = 33;
 
                     ;% QUARC_simlink_P.HILInitialize_DOInitial
-                    section.data(35).logicalSrcIdx = 55;
+                    section.data(35).logicalSrcIdx = 54;
                     section.data(35).dtTransOffset = 34;
 
                     ;% QUARC_simlink_P.HILReadEncoder_Active
-                    section.data(36).logicalSrcIdx = 56;
+                    section.data(36).logicalSrcIdx = 55;
                     section.data(36).dtTransOffset = 35;
 
                     ;% QUARC_simlink_P.HILWriteAnalog_Active
-                    section.data(37).logicalSrcIdx = 57;
+                    section.data(37).logicalSrcIdx = 56;
                     section.data(37).dtTransOffset = 36;
 
             nTotData = nTotData + section.nData;
@@ -336,8 +332,8 @@
         ;%
         ;% Auto data (QUARC_simlink_B)
         ;%
-            section.nData     = 8;
-            section.data(8)  = dumData; %prealloc
+            section.nData     = 7;
+            section.data(7)  = dumData; %prealloc
 
                     ;% QUARC_simlink_B.HILReadEncoder_o1
                     section.data(1).logicalSrcIdx = 0;
@@ -351,25 +347,21 @@
                     section.data(3).logicalSrcIdx = 2;
                     section.data(3).dtTransOffset = 2;
 
-                    ;% QUARC_simlink_B.SignalGenerator
+                    ;% QUARC_simlink_B.otpt_v
                     section.data(4).logicalSrcIdx = 3;
                     section.data(4).dtTransOffset = 3;
 
-                    ;% QUARC_simlink_B.otpt_v
+                    ;% QUARC_simlink_B.P1
                     section.data(5).logicalSrcIdx = 4;
                     section.data(5).dtTransOffset = 4;
 
-                    ;% QUARC_simlink_B.P1
+                    ;% QUARC_simlink_B.P2
                     section.data(6).logicalSrcIdx = 5;
                     section.data(6).dtTransOffset = 5;
 
-                    ;% QUARC_simlink_B.P2
+                    ;% QUARC_simlink_B.otpt
                     section.data(7).logicalSrcIdx = 6;
                     section.data(7).dtTransOffset = 6;
-
-                    ;% QUARC_simlink_B.otpt
-                    section.data(8).logicalSrcIdx = 7;
-                    section.data(8).dtTransOffset = 7;
 
             nTotData = nTotData + section.nData;
             sigMap.sections(1) = section;
@@ -379,7 +371,7 @@
             section.data(1)  = dumData; %prealloc
 
                     ;% QUARC_simlink_B.status
-                    section.data(1).logicalSrcIdx = 9;
+                    section.data(1).logicalSrcIdx = 8;
                     section.data(1).dtTransOffset = 0;
 
             nTotData = nTotData + section.nData;
@@ -619,8 +611,8 @@
     ;%
 
 
-    targMap.checksum0 = 3850681871;
-    targMap.checksum1 = 133373774;
-    targMap.checksum2 = 1203569291;
-    targMap.checksum3 = 1955429352;
+    targMap.checksum0 = 2027488493;
+    targMap.checksum1 = 2469639587;
+    targMap.checksum2 = 3581638370;
+    targMap.checksum3 = 4189713608;
 

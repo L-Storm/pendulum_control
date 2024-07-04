@@ -9,7 +9,7 @@
  *
  * Model version              : 15.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Wed Jul  3 16:26:55 2024
+ * C source code generated on : Thu Jul  4 14:45:37 2024
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -869,7 +869,6 @@ typedef struct {
   real_T HILReadEncoder_o1;            /* '<Root>/HIL Read Encoder' */
   real_T HILReadEncoder_o2;            /* '<Root>/HIL Read Encoder' */
   real_T Add;                          /* '<Root>/Add' */
-  real_T SignalGenerator;              /* '<Root>/Signal Generator' */
   real_T otpt_v;                       /* '<Root>/MATLAB Function2' */
   real_T P1;                           /* '<Root>/MATLAB Function2' */
   real_T P2;                           /* '<Root>/MATLAB Function2' */
@@ -991,11 +990,8 @@ struct P_QUARC_simlink_T_ {
   real_T Constant_Value;               /* Expression: 0
                                         * Referenced by: '<Root>/Constant'
                                         */
-  real_T SignalGenerator_Amplitude;    /* Expression: 1
-                                        * Referenced by: '<Root>/Signal Generator'
-                                        */
-  real_T SignalGenerator_Frequency;    /* Expression: 3
-                                        * Referenced by: '<Root>/Signal Generator'
+  real_T Constant1_Value;              /* Expression: 0
+                                        * Referenced by: '<Root>/Constant1'
                                         */
   int32_T HILInitialize_EIInitial;/* Computed Parameter: HILInitialize_EIInitial
                                    * Referenced by: '<Root>/HIL Initialize'

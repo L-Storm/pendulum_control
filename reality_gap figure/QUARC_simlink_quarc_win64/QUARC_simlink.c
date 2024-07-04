@@ -9,7 +9,7 @@
  *
  * Model version              : 15.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Wed Jul  3 16:26:55 2024
+ * C source code generated on : Thu Jul  4 14:45:37 2024
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -157,19 +157,16 @@ void QUARC_simlink_output(void)
   QUARC_simlink_B.P2 = c_idx_0;
 
   /* End of MATLAB Function: '<Root>/MATLAB Function2' */
-  /* SignalGenerator: '<Root>/Signal Generator' */
-  QUARC_simlink_B.SignalGenerator = sin(6.2831853071795862 *
-    QUARC_simlink_M->Timing.t[0] * QUARC_simlink_P.SignalGenerator_Frequency) *
-    QUARC_simlink_P.SignalGenerator_Amplitude;
-
-  /* S-Function (hil_write_analog_block): '<Root>/HIL Write Analog' */
+  /* S-Function (hil_write_analog_block): '<Root>/HIL Write Analog' incorporates:
+   *  Constant: '<Root>/Constant1'
+   */
 
   /* S-Function Block: QUARC_simlink/HIL Write Analog (hil_write_analog_block) */
   {
     t_error result;
     result = hil_write_analog(QUARC_simlink_DW.HILInitialize_Card,
       &QUARC_simlink_P.HILWriteAnalog_channels, 1,
-      &QUARC_simlink_B.SignalGenerator);
+      &QUARC_simlink_P.Constant1_Value);
     if (result < 0) {
       msg_get_error_messageA(NULL, result, _rt_error_message, sizeof
         (_rt_error_message));
@@ -428,10 +425,10 @@ RT_MODEL_QUARC_simlink_T *QUARC_simlink(void)
   QUARC_simlink_M->Timing.stepSize1 = 0.002;
 
   /* External mode info */
-  QUARC_simlink_M->Sizes.checksums[0] = (3850681871U);
-  QUARC_simlink_M->Sizes.checksums[1] = (133373774U);
-  QUARC_simlink_M->Sizes.checksums[2] = (1203569291U);
-  QUARC_simlink_M->Sizes.checksums[3] = (1955429352U);
+  QUARC_simlink_M->Sizes.checksums[0] = (2027488493U);
+  QUARC_simlink_M->Sizes.checksums[1] = (2469639587U);
+  QUARC_simlink_M->Sizes.checksums[2] = (3581638370U);
+  QUARC_simlink_M->Sizes.checksums[3] = (4189713608U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -492,8 +489,8 @@ RT_MODEL_QUARC_simlink_T *QUARC_simlink(void)
   QUARC_simlink_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   QUARC_simlink_M->Sizes.numSampTimes = (2);/* Number of sample times */
   QUARC_simlink_M->Sizes.numBlocks = (19);/* Number of blocks */
-  QUARC_simlink_M->Sizes.numBlockIO = (10);/* Number of block outputs */
-  QUARC_simlink_M->Sizes.numBlockPrms = (60);/* Sum of parameter "widths" */
+  QUARC_simlink_M->Sizes.numBlockIO = (9);/* Number of block outputs */
+  QUARC_simlink_M->Sizes.numBlockPrms = (59);/* Sum of parameter "widths" */
   return QUARC_simlink_M;
 }
 

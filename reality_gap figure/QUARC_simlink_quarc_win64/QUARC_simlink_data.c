@@ -9,7 +9,7 @@
  *
  * Model version              : 15.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Wed Jul  3 16:26:55 2024
+ * C source code generated on : Thu Jul  4 14:45:37 2024
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -102,15 +102,10 @@ P_QUARC_simlink_T QUARC_simlink_P = {
    */
   0.0,
 
-  /* Expression: 1
-   * Referenced by: '<Root>/Signal Generator'
+  /* Expression: 0
+   * Referenced by: '<Root>/Constant1'
    */
-  1.0,
-
-  /* Expression: 3
-   * Referenced by: '<Root>/Signal Generator'
-   */
-  3.0,
+  0.0,
 
   /* Computed Parameter: HILInitialize_EIInitial
    * Referenced by: '<Root>/HIL Initialize'

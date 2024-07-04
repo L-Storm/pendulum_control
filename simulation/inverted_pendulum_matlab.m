@@ -53,7 +53,7 @@ J_2=(1/4)*m_2*r_2^2+(1/3)*m_2*L_2^2;% pendulum moment of inertia (arm2)
 % System linearized at [0 0 0 0]' or [0 pi 0 0]'
 % For [0 0 0 0]' set l=1 For comparing state-space and nonlinear model
 % For [0 pi 0 0]' set l=-1 (for controller design)
-l=1;
+l=-1;
 
 
 M=[m_2*L_1^2+J_1 -l*0.5*m_2*L_2*L_1;
