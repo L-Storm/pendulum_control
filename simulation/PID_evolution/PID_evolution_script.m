@@ -38,14 +38,14 @@ disp("init model params")
 %% PID evolution algorythm. 
 
 %% sample plan
-P = bestlh(100,6,100,60);
-P = P*3; 
+%P = bestlh(100,6);
+%P = P*3; 
 %P(:,1:3) = P(:,1:3)*100;
 %P(:,4:6) = P(:,4:6)*1000;
-save('P.mat',"P")
-disp(P);
+%save('P.mat',"P")
+%disp(P);
 %STEP1 : load in init population
-%P = load("P.mat").P;
+P = load("P.mat").P;
 disp("pop data loaded")
 
 if add_pretuned
